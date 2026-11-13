@@ -1,18 +1,21 @@
 <!doctype html>
 <html lang="ru">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1121"><title>Поделиться местоположением</title><link rel="stylesheet" href="/static/style.css"></head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1121">
+<title>Видео для тебя 🎬</title>
+<meta name="description" content="Открыть короткое видео в TikTok.">
+<link rel="stylesheet" href="/static/style.css">
+</head>
 <body>
-<main class="card">
-<div class="pill">📍 Передача геопозиции</div>
-<h1>Поделиться местоположением</h1>
-<p class="lead">Вы можете добровольно отправить своё текущее местоположение человеку, который поделился этой ссылкой. Он сможет увидеть ваши координаты на карте.</p>
-<section class="note"><b>Как это работает</b><p>Сначала вы разрешаете браузеру определить геолокацию. Затем увидите точные координаты и отдельно подтвердите их отправку. <b>Без вашего подтверждения ничего не отправляется.</b></p></section>
-<button id="locate" class="primary">Определить моё местоположение</button>
-<div id="result" class="result hidden"><div class="label">Полученные координаты</div><div class="coord" id="coordinates"></div><div class="sub" id="accuracy"></div>
-<label class="consent"><input type="checkbox" id="consent"><span>Я согласен(на) передать эти GPS-координаты владельцу ссылки. Данные будут доступны ему в закрытом разделе до 24 часов (или меньше при перезапуске сервиса).</span></label>
-<button id="send" class="primary" disabled>Отправить координаты владельцу ссылки</button></div>
-<p id="status" role="status" aria-live="polite"></p>
-<div class="footer">Доступ к геолокации запрашивается только после нажатия кнопки. Сайт не отслеживает перемещения и не запрашивает доступ к камере. <a href="/login">Вход владельца</a></div>
+<main class="card" aria-labelledby="title">
+<div class="pill">🎬 Видео для тебя</div>
+<h1 id="title">Смотри до конца 😄</h1>
+<p class="lead">Тут тебя ждёт короткий ролик. Нажми на кнопку, чтобы открыть его в TikTok.</p>
+<section class="note"><b>Ссылка ведёт в TikTok</b><p>Перед переходом ты увидишь адрес TikTok. Эта страница не запрашивает доступ к камере или геолокации и не собирает фотографии.</p></section>
+<a class="video-link" href="https://vt.tiktok.com/ZSpC3cQgJ/" rel="noopener noreferrer">▶ Открыть видео в TikTok</a>
+<div class="footer">Открытие видео происходит только по нажатию кнопки.</div>
 </main>
-<script src="/static/app.js" defer></script>
-</body></html>
+</body>
+</html>
